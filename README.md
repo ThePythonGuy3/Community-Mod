@@ -1,5 +1,5 @@
-# This Mod is driven by the community. Just make a Pull Request and you'll have write access in between 10 minutes or 1 day. 
+# Mindustry Community Mod
 
-As every Community driven thingy, each month it has a theme. This months theme is:
+A mindustry mod maintained and driven by the mindustry modder community. To keep things more interesting, each month it has a theme discussed by the community. To see the theme log, hesd over to THEMES.md or click [here](THEMES.md).
 
-### Mechanical madness.
+This current month's theme is **Mechanical Madness**
