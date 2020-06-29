@@ -13,5 +13,7 @@ html {
 }
 
 #topHeading {
+  padding: 5px 10px 10px 10px;
+  font-size: 29px;
   background-color: #f7ca6f;
 }
