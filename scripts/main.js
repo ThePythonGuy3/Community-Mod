@@ -1,4 +1,5 @@
 require("shaders");
+require("shaderwalls");
 
 const unitSpawner = extendContent(Block, "unit-spawner", {
     buildConfiguration(tile, table){
