@@ -1,6 +1,7 @@
 require("community-mod/shaders");
 require("shaderwalls");
 
+const ritzip = () => {
 const unitSpawner = extendContent(Block, "unit-spawner", {
     buildConfiguration(tile, table){
         table.addImageButton(Icon.wrench, Styles.clearTransi, run(() => {
@@ -68,3 +69,5 @@ unitSpawner.size = 1;
 unitSpawner.update = true;
 unitSpawner.localizedName = "Unit Spawner";
 unitSpawner.description = "";
+};
+ritzip();
