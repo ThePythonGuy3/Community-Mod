@@ -1,3 +1,5 @@
+require("shaders");
+
 const unitSpawner = extendContent(Block, "unit-spawner", {
     buildConfiguration(tile, table){
         table.addImageButton(Icon.wrench, Styles.clearTransi, run(() => {
