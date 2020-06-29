@@ -1,0 +1,6 @@
+name: "Community Mod",
+author: "The Mindustry Modding Community",
+description: "A mod driven by the community",
+version: 1.0,
+minGameVersion: "104",
+dependencies: []
