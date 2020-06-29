@@ -12,11 +12,11 @@ html {
 
 #firstPar {
   color: white;
-  width: 650px;
-  line-height: 2;
+  width: 550px;
+  line-height: 1.5;
   margin: 0 auto;
   padding: 5px 15px 15px 15px;
   border: 5px solid #f7ca6f;
-  font-size: 10px;
+  font-size: 13px;
 }
 
