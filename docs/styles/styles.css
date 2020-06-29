@@ -2,9 +2,10 @@ html {
   background-color: #161616;
   color: white;
   font-family: 'Audiowide', cursive;
+  font-size: 10px
 }
 
-body {
+#firstPar {
   width: 500px;   
   margin: 0 auto;
   padding: 5px 15px 15px 15px;
