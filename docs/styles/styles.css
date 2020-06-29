@@ -4,7 +4,9 @@ html {
   font-family: 'Audiowide', cursive;
 }
 
-p {
+body {
   width: 500px;   
   margin: 0 auto;
+  padding: 5px 15px 15px 15px;
+  border: 5px solid #f7ca6f;
 }
