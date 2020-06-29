@@ -3,6 +3,13 @@ html {
   font-family: 'Audiowide', cursive;
 }
 
+#topHeading {
+  color: black;
+  padding: 5px 10px 10px 10px;
+  font-size: 29px;
+  background-color: #f7ca6f;
+}
+
 #firstPar {
   color: white;
   width: 650px;
@@ -13,9 +20,3 @@ html {
   font-size: 10px;
 }
 
-#topHeading {
-  color: black;
-  padding: 5px 10px 10px 10px;
-  font-size: 29px;
-  background-color: #f7ca6f;
-}
