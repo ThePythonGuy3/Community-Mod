@@ -10,3 +10,7 @@ body {
   padding: 5px 15px 15px 15px;
   border: 5px solid #f7ca6f;
 }
+
+#topHeading {
+  background-color: #f7ca6f;
+}
