@@ -1,4 +1,4 @@
-require("shaders");
+require("community-mod/shaders");
 require("shaderwalls");
 
 const unitSpawner = extendContent(Block, "unit-spawner", {
