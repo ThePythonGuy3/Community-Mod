@@ -61,6 +61,18 @@ c.wallshader5=extendContent(Wall,"wallshader5",{
   }
 });
 
+c.wallshader6=extendContent(Wall,"wallshader6",{
+  draw(tile){
+    Draw.shader(shader.stems);
+    Draw.rect(this.animRegion, tile.drawx(), tile.drawy());
+    Draw.shader();
+  },
+  load(){
+    this.super$load();
+    this.animRegion=Core.atlas.find("community-mod-wallshader");
+  }
+});
+
 var arr = Object.keys(c);
 for(var i=0;i<arr.length;i++){
   var obj = c[arr[i]];
