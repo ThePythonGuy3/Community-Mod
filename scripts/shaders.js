@@ -48,7 +48,7 @@ if(!Vars.headless){
     //todo make multiline strings work
     "uniform mat4 u_projTrans;attribute vec4 a_position;attribute vec2 a_texCoord0;attribute vec4 a_color;varying vec4 v_color;varying vec2 v_texCoord;void main(){gl_Position = u_projTrans * a_position;v_texCoord = a_texCoord0;v_color = a_color;}", "#ifdef GL_ES\nprecision highp float;\n#endif\n#define TAU 6.28318530718\n#define MAX_ITER 5\nuniform float u_time;\nuniform vec2 u_resolution;\nuniform sampler2D u_texture;\nvarying vec4 v_color;\nvarying vec2 v_texCoord;\nvoid main( void ) \n{\nvec2 iResolution = u_resolution;\n   float time = u_time * 0.01 * .5+23.0;\n    // uv should be the 0-1 uv of texture...\n  \n   vec2 uv = gl_FragCoord.xy / iResolution.xy;\n  vec2 p = mod(uv*TAU, TAU)-250.0;\n   vec2 i = vec2(p);\n   float c = 1.0;\n   float inten = .005;\n   for (int n = 0; n < MAX_ITER; n++) \n   {\n      float t = time * (1.0 - (3.5 / float(n+1)));\n      i = p + vec2(cos(t - i.x) + sin(t + i.y), sin(t - i.y) + cos(t + i.x));\n      c += 1.0/length(vec2(p.x / (sin(i.x+t)/inten),p.y / (cos(i.y+t)/inten)));\n   }\n   c /= float(MAX_ITER);\n   c = 1.17-pow(c, 1.4);\n   vec3 fin = vec3(pow(abs(c), 8.0));\n    fin = clamp(fin + vec3(0.0, 0.35, 0.5), 0.0, 1.0);\n    vec4 color = texture2D(u_texture, v_texCoord.xy);\n   gl_FragColor = vec4(color.rgb * fin, color.a);\n}");
 
-    cthis.global.communityMod.shaders.stems = new JavaAdapter(Shader, {
+    this.global.communityMod.shaders.stems = new JavaAdapter(Shader, {
       apply(){
         this.setUniformf("u_resolution", Core.graphics.getWidth(), Core.graphics.getHeight());
         this.setUniformf("u_time", Time.time() / Scl.scl(1.0));
