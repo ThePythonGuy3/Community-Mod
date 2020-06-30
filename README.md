@@ -9,7 +9,7 @@ This current month's theme is **Mechanical Madness**
   <a href="https://discord.gg/nwHgCfd">
     <img alt="Discord Server" src="https://discord.com/assets/e05ead6e6ebc08df9291738d0aa6986d.png" width=60>
   </a>
-  <a href="https://thepythonguy3.github.io/Community-Mod/">
+  <a href="https://thepythonguy3.github.io/Community-Mod-Webpage/">
     <img alt="GitHub Website" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width=65>
   </a>
 </p>
