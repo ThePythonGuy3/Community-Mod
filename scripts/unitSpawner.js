@@ -65,7 +65,7 @@ const unitSpawner = extendContent(Block, "unit-spawner", {
 });
 unitSpawner.entityType = prov(() => extend(TileEntity, {
     _unit: UnitTypes.dagger,
-    _team: 0,
+    _team: 1,
 
     unit(){ return this._unit },
     setUnit(unit){ this._unit = unit },
