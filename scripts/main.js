@@ -33,11 +33,12 @@ function loaded() {
 	loadTo("h", "menu");
 }
 
-if (Vars.ui.hudGroup) {
+/*if (Vars.ui.hudGroup) {
 	loaded();
 } else {
 	Events.on(EventType.ClientLoadEvent, run(loaded));
-}
+}*/
+loaded();
 
 const ritzip = () => {
 const unitSpawner = extendContent(Block, "unit-spawner", {
