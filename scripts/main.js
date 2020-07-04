@@ -30,7 +30,7 @@ function loaded() {
 	load("h");
 	//load("MOON - Hydrogen", true);
 	//loadTo("MOON - Paris", "launch");
-	//loadTo("The Green Kingdom - Untitled", "menu");
+	loadTo("h", "menu");
 }
 
 if (Vars.ui.hudGroup) {
