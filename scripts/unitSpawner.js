@@ -44,7 +44,7 @@ const unitSpawner = extendContent(Block, "unit-spawner", {
         var handle = [
             (tile) => this.pick(tile),
             (tile) => {
-                var unit = tile.entity.unit().create(tile.entity.team());
+                var unit = tile.entity.unit().create(Team.get(tile.entity.team()));
                 unit.set(tile.entity.getX(), tile.entity.getY());
                 unit.add();
             },
