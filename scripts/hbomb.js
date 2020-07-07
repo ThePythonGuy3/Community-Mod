@@ -5,8 +5,8 @@ const wallEffect = newEffect(20, h => {
 
 const hbomb = extendContent(Wall, "hbomb", {
 	load(){
-		var modnamed = "mindblow-";
-		this.region = Core.atlas.find(modnamed + "hbomb");
+		var modnamed = "community-mod-";
+		this.region = Core.atlas.find(modnamed + "hbomb-region");
 		this.sphereRegion = Core.atlas.find(modnamed + "hbomb-spheres");
 		this.toppRegion = Core.atlas.find(modnamed + "hbomb-topp");
 	},
