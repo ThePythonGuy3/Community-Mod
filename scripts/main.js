@@ -1,5 +1,6 @@
 require("community-mod/shaders");
 require("shaderwalls");
+require("hbomb");
 
 const Music = Packages.arc.audio.Music;
 
