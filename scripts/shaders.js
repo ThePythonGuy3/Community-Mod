@@ -18,18 +18,7 @@ if(!Vars.headless){
       }
     },
     //todo make multiline strings work
-    `#ifdef GL_ES
-precision highp float;
-precision mediump int;
-#endif
-uniform sampler2D u_texture;uniform float u_time;varying vec4 v_color;varying vec2 v_texCoord;void main(){vec4 color = texture2D(u_texture, v_texCoord.xy);
-float t2 = clamp((sin(u_time * .01 + gl_FragCoord.x * .01 + gl_FragCoord.y * .005) + 1.) / 2., 0., 1.);
-float t = clamp((sin(u_time * .01 + gl_FragCoord.x * .02 + gl_FragCoord.y * .01) + 1.) / 2., 0., 1.);
-vec3 c3 = vec3(0.60, 1.00, 0.38);
-vec3 c2 = vec3(1.0, 0.84, 0.38);
-vec3 c1 = vec3(0.25, 0.52, 1.96);
-vec3 c = vec3(mix(c3.x, mix(c1.x, c2.x, t), t2), mix(c3.y, mix(c1.y, c2.y, t), t2), mix(c3.z, mix(c1.z, c2.z, t), t2));
-gl_FragColor = vec4(color.rgb * c.rgb, color.a);`);
+    "");
     
     this.global.communityMod.shaders.space = new JavaAdapter(Shader, {
       apply(){
