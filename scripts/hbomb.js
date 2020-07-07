@@ -16,7 +16,7 @@ const hbomb = extendContent(Wall, "hbomb", {
 		entity = tile.ent();
 		Draw.shader(shader.specciali);
 		Draw.rect(this.region, tile.drawx(), tile.drawy());
-		Draw.reset();
+		Draw.shader();
 		Draw.rect(this.sphereRegion, tile.drawx(), tile.drawy(), Time.time() * (entity.getForce()/200));
 		Draw.rect(this.toppRegion, tile.drawx(), tile.drawy(), 360 - ((Time.time() * (entity.getForce()/200))%360));
 	},
