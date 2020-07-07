@@ -1,0 +1,12 @@
+health: 1000
+size: 2
+name: A Nuke Wall
+description: h
+update: true
+configurable: true
+requirements: [
+  lead/30
+  graphite/70
+]
+category: defense
+research: copper-wall
