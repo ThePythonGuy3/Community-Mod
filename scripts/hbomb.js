@@ -1,3 +1,5 @@
+const shader=this.global.communityMod.shaders;
+
 const wallEffect = newEffect(20, h => {
 	Draw.color(Color.valueOf("8fdbb2"), Color.valueOf("7ec49f"), h.fin());
 	Lines.spikes(h.x, h.y, Mathf.sin(h.fout()*3)*10, Mathf.sin(h.fout())*2, 8, h.fin()*50);
@@ -12,7 +14,9 @@ const hbomb = extendContent(Wall, "hbomb", {
 	},
 	draw(tile){
 		entity = tile.ent();
+		Draw.shader(shader.specciali);
 		Draw.rect(this.region, tile.drawx(), tile.drawy());
+		Draw.reset();
 		Draw.rect(this.sphereRegion, tile.drawx(), tile.drawy(), Time.time() * (entity.getForce()/200));
 		Draw.rect(this.toppRegion, tile.drawx(), tile.drawy(), 360 - ((Time.time() * (entity.getForce()/200))%360));
 	},
