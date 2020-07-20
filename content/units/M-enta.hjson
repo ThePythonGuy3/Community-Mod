@@ -1,0 +1,25 @@
+type: flyingUnit
+name: M.anta
+description: you see a crawler? now imagine it flying.
+maxSpeed: 0.6
+speed: 0.7
+flying: true
+health: 80
+engineOffset: 6
+range: 10
+weapon: {
+  name: fuckit
+  length: 1.5
+  reload: 0.5
+  alternate: false
+  bullet: { 
+    killShooter : true
+    bulletShrink : 0.7
+    lifetime : 30
+    drag : 0.05
+    keepVelocity : false
+    splashDamage: 60
+    splashDamageRadius: 64
+    hitSound : explosion
+  }
+}
