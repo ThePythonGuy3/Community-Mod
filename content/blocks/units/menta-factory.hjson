@@ -1,5 +1,3 @@
-name: M.anta Factory
-description: Makes M.anta, aka flying crawler.
 type: UnitFactory
 unitType: menta
 size: 2
@@ -16,5 +14,6 @@ consumes: {
 requirements: [
   silicon/60
   titanium/40
-
 ]
+category: units
+research: crawler-factory
