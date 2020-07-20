@@ -1,0 +1,20 @@
+name: M.anta Factory
+description: Makes M.anta, aka flying crawler.
+type: UnitFactory
+unitType: menta
+size: 2
+produceTime: 150
+category: units
+consumes: {
+  power: 1
+  items: {
+    items: [
+      coal/20
+    ]
+  }
+}
+requirements: [
+  silicon/60
+  titanium/40
+
+]
